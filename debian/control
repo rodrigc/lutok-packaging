@@ -1,0 +1,40 @@
+Source: liblutok
+Priority: optional
+Maintainer: Craig Rodrigues <rodrigc@FreeBSD.org>
+Build-Depends: debhelper (>= 9), autotools-dev, liblua5.2-dev
+Standards-Version: 3.9.5
+Section: libs
+Homepage: https://github.com/jmmv/lutok
+#Vcs-Git: git://git.debian.org/collab-maint/liblutok.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/liblutok.git;a=summary
+
+
+Package: liblutok
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: shared library for Lutok applications
+ This package contains the Lutok library.
+ .
+ Lutok provides thin C++ wrappers around the Lua C API to ease the
+ interaction between C++ and Lua.  These wrappers make intensive use of
+ Resource Acquisition is Initialization (RAII) to prevent resource
+ leakage, expose C++-friendly data types, report
+ errors by means of exceptions and ensure that the Lua stack is always
+ left untouched in the face of errors.  The library also provides a small
+ subset of miscellaneous utility functions built on top of the wrappers.
+ Lutok focuses on providing a clean and safe C++ interface; the drawback
+ is that it is not suitable for performance-critical environments.  In
+ order to implement error-safe C++ wrappers on top of a Lua C binary
+ library, Lutok adds several layers or abstraction and error checking
+ that go against the original spirit of the Lua C API and thus degrade
+ performance.
+
+Package: liblutok-dev
+Section: libdevel
+Architecture: any
+Depends: liblutok (= ${binary:Version}), ${misc:Depends}
+Description: shared library for Lutok applications -- development files
+ This package contains files required for developing software
+ that makes use of the Lutok library.
+ .
+ Lutok provides thin C++ wrappers around the Lua C API.

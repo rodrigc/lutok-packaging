@@ -1,0 +1,5 @@
+liblutok (0.4-1) UNRELEASED; urgency=low
+
+  * Initial release (Closes: #675626)
+
+ -- Craig Rodrigues <rodrigc@FreeBSD.org>  Tue, 14 Oct 2014 00:10:54 -0700

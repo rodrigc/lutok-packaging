@@ -1,0 +1,3 @@
+version=3
+
+https://github.com/jmmv/lutok/tags .*/*-(\d\S*)\.tar\.gz
