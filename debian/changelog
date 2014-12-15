@@ -1,4 +1,4 @@
-liblutok (0.4-1) UNRELEASED; urgency=low
+liblutok (0.4-1) unstable; urgency=low
 
   * Initial release (Closes: #675626)
 
