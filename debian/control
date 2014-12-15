@@ -12,7 +12,7 @@ Homepage: https://github.com/jmmv/lutok
 Package: liblutok
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: shared library for Lutok applications
+Description: lightweight C++ API for Lua
  This package contains the Lutok library.
  .
  Lutok provides thin C++ wrappers around the Lua C API to ease the
@@ -33,7 +33,7 @@ Package: liblutok-dev
 Section: libdevel
 Architecture: any
 Depends: liblutok (= ${binary:Version}), ${misc:Depends}
-Description: shared library for Lutok applications -- development files
+Description: library for lightweight C++ API for Lua -- development files
  This package contains files required for developing software
  that makes use of the Lutok library.
  .
